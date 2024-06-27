@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2021 at 12:05 PM
+-- Generation Time: Nov 29, 2021 at 05:56 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -41,6 +41,7 @@ CREATE TABLE `comment_box` (
 --
 
 CREATE TABLE `registration` (
+  `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `number` bigint(11) NOT NULL,
   `dob` date NOT NULL,
@@ -50,19 +51,19 @@ CREATE TABLE `registration` (
   `language` varchar(11) NOT NULL,
   `emergency` bigint(12) NOT NULL,
   `address` text NOT NULL,
-  `user_type` int(2) NOT NULL
+  `user_type` int(2) NOT NULL,
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `registration`
 --
 
-INSERT INTO `registration` (`name`, `number`, `dob`, `email`, `password`, `gender`, `language`, `emergency`, `address`, `user_type`) VALUES
-('hareesh', 576348, '2021-11-03', 'dg@hvfhd.sdhcv', 'dfrg', 'on', 'Telugu', 46547, 'trgtrg', 0),
-('dsv', 3253, '0000-00-00', 'f@dfv.dcvg', 'fegv', 'on', 'Telugu', 346, 'hbsgn', 0),
-('Heramba', 9872364587, '2021-11-06', 'ghsfd@vfhjv.gd', 'fguhlvfhu', 'on', 'Telugu', 43789, 'fzghjuuhygtfrds vgrd vre', 0),
-('Hareesh', 8985884602, '0000-00-00', 'm.hareesh2504@gmail.com', 'hareesh', 'male', 'telugu', 9876543210, 'Tech Mahendra Foundation Smart Academy', 0),
-('sabita', 1234567890, '2021-11-01', 'sabitay13@gmail.com', 'sabita', 'on', 'Telugu', 9876543210, 'TMFSA', 1);
+INSERT INTO `registration` (`id`, `name`, `number`, `dob`, `email`, `password`, `gender`, `language`, `emergency`, `address`, `user_type`, `image`) VALUES
+(4, 'teh', 547, '2021-11-05', 'ab@c.d', 'GHC', 'Male', 'Telugu', 567876, 'strhtm', 1, ''),
+(3, 'tech', 5475, '2021-11-05', 'ab@c.de', 'uhsvcb', 'Male', 'Hindi', 567876, 'strhtm', 0, ''),
+(1, 'Heramba', 9872364587, '2021-11-06', 'ghsfd@vfhjv.gd', 'fguhlvfhu', 'Male', 'Telugu', 43789, 'fzghjuuhygtfrds vgrd vre', 0, ''),
+(2, 'Hareesh', 8985884602, '0000-00-00', 'm.hareesh2504@gmail.com', 'hareesh', 'male', 'telugu', 9876543210, 'Tech Mahendra Foundation Smart Academy', 0, '');
 
 --
 -- Indexes for dumped tables

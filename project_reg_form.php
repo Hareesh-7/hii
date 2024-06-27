@@ -33,7 +33,7 @@
 					<a class="nav-link" href="hii.php">About Us</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="hii.php">Gallery</a>
+					<a class="nav-link" href="hii.php">Gallary</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="hii.php">History</a>
@@ -49,7 +49,7 @@
 
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#"><input type="text" name="search" placeholder="Type your search content">&nbsp;<i class="fas fa-search"></i></a>
+					<a class="nav-link" href="#"><input type="text" name="search" placeholder="Type your search contant">&nbsp;<i class="fas fa-search"></i></a>
 				  </li>	
 				</ul>
 			</nav>
@@ -80,7 +80,7 @@
 												</td>
 					</tr>
 					<tr>
-						<th>Mother Tongue</th><th>:</th><td>
+						<th>Mother Tounge</th><th>:</th><td>
 															<select name="language">
 																<option>Telugu</option>
 																<option>English</option>
@@ -90,13 +90,13 @@
 														</td>
 					</tr>
 					<tr>
-						<th>Emergency Contact Number</th><th>:</th><td><input type="number" name="emergency" placeholder="Enter Your Guardian Number"></td>
+						<th>Emergency Contact Number</th><th>:</th><td><input type="number" name="emergency" placeholder="Enter Your Guardain Number"></td>
 					</tr>
 					<tr>
 						<th>Address</th><th>:</th><td><input type="text-area" name="address" placeholder="Enter Your address"></td>
 					</tr>
 					<tr>
-						<th>Profile_Pic</th><th>:</th><td><input type="file" name="image" style="width: 150px; height: 100px;"></td>
+						<th>Profilr_Pic</th><th>:</th><td><input type="file" name="image"></td>
 					</tr>
 
 					<tr>
@@ -107,7 +107,7 @@
 					</tr>
 					<tr>
 						<td colspan="3" style="text-align: center" style="color: red">
-							If already registered <a href="project_login_form.php">click here</a> to log_in.
+							If already registred <a href="project_login_form.php">click here</a> to log_in.
 						</td>
 					</tr>
 				</table>

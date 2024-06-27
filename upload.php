@@ -20,7 +20,7 @@
 		$file_temp = $_FILES['file_name']['tmp_name'];
 		$file_type = $_FILES['file_name']['type'];
 		$file_path = 'uploads/'.$fileName;
-		move_uploaded_file($file_temp,$file_path);
+						move_uploaded_file($file_temp,$file_path);
 	
 	}
 /*

@@ -11,19 +11,18 @@
         $eme = $_POST['emergency'];
         $address = $_POST['address'];
         $user_type = $_POST['user_type'];
-       $image = $_POST['image'];
+       	$image = $_POST['image'];
      	$number= number_format($num);
 		$emergency= number_format($eme);
-	
-		if (isset($_FILES['image'])){
-		   $filename = $_FILES['image']['name'];
-		   echo $filetmp = $_FILES['image']['tmp_name'];
-		   $filepath = 'images/'.$filename;
 
-		   move_uploaded_file($filetmp,$filepath);
-		}
+      // if (isset($_FILES['image'])){
+		//    $filename = $_FILES['image']['name'];
+		//    echo $filetmp = $_FILES['image']['tmp_name'];
+		//    $filepath = 'images/'.$filename;
 
-	
+		//    move_uploaded_file($filetmp,$filepath);
+		// }
+
     }
 
    	echo $sql = "update registration set name='".$name."', number=".$num.", dob='".$dob."', address='".$address."',password= '".$password."',  gender='".$gender."',language='".$language."',emergency=".$eme.",user_type='".$user_type."',image='".$image."' where email='".$email."'";
@@ -33,5 +32,3 @@
       echo "User updated successfully";
    //code to isnert into db
 ?>
-
-

@@ -57,11 +57,10 @@
 				</ul>
 			</nav>
 		</div>
-			<form method="post" enctype="multipart/form-data">
+		<form method="POST" >
 			<h1>table</h1>
 				<table border="1">
 					<tr style="text-align: center;">
-						<td>Id</td>
 						<td>Name</td>
 						<td>Phone_Number</td>
 						<td>Date of Birth</td>
@@ -70,7 +69,7 @@
 						<td>Gender</td>
 						<td>Language</td>
 						<td>Address</td>
-						<td style="color:red;" width="10%" height="10px">Photo</td>
+						<td>Photo</td>
 						<td>Delete</td>
 						<td>Update/Modify</td>
 						<td>Upload</td>
@@ -80,7 +79,6 @@
 					if ($count > 0) {
 						while ($row=$result->fetch(PDO::FETCH_ASSOC)) {
 							echo "<tr>
-									<td>".$row['id']."</td>
 									<td>".$row['name']."</td>
 									<td>".$row['number']."</td>
 									<td>".$row['dob']."</td>
@@ -89,7 +87,7 @@
 									<td>".$row['gender']."</td>
 									<td>".$row['language']."</td>
 									<td>".$row['address']."</td>
-									<td><img name=preview src=images/".$row['image']." style=width:9rem;height:7rem;></td>
+									<td><img name=preview src=images/".$row['image']."></td>
 									<td><a href=delete.php?email=".$row['email']." name=delete>delete</a></td>
 									<td><a href=update_file.php?email=".$row['email']." name=update>Update</a></td>
 									<td><a href=upload.php?email=".$row['email']." name=upload>upload</a></td>

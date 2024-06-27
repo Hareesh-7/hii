@@ -4,9 +4,10 @@
         <title>
             HII
         </title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"</script>
 		<style>
 			
 			.col-sm-4:hover {
@@ -215,10 +216,10 @@
 						<i class="fab fa-twitter-square"></i>Twitter<br>
 			  		</div>
 					<div class="col-sm-3">
-						<form action="hii_comment_form.php" method="post" name="hii_comment_form">
+						<form action="" method="post" name="hii_comment_form">
 							<input type="text" name="name" id="name" placeholder="Name" class="form_bdr">
 							<input type="email" name="email" id="email" placeholder="Email ID" class="form_bdr"><br>
-							<textarea rows="4" cols="50" name="comment" placeholder="Enter your comment here..." class="form_bdr" id="comment"></textarea><br>
+							<textarea rows="4" cols="50" name="comment" form="hii_comment_form" placeholder="Enter your comment here..." class="form_bdr" id="comment"></textarea><br>
 							<input type="submit" name="submit" value="Submit" onClick="submit_comment()" class="submit">
 						</form>
 					</div>

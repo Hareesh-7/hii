@@ -84,7 +84,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
 						<th>Password</th><th>:</th><td><input type="text" name="password" value="<?php echo $row['password']; ?>"></td>
 					</tr>
 					<tr>
-						<th>Gender</th><th>:</th><td><input type="radio" name="gender" value="<?php echo $row["gender"]; ?>">Male<input type="radio" name="gender" value="<?php echo $row["gender"]; ?>">Female</td>
+						<th>Gender</th><th>:</th><td><input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</td>
 					</tr>
 					<tr>
 						<th>Mother Tounge</th><th>:</th><td><select name="language">
@@ -114,8 +114,13 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
 					</tr>
 					<tr>
 						<td colspan="3" style="text-align: center">
-							<input type="submit" value="UPDATE" name="update">
+							<input type="submit" value="update" name="update">
 							<input type="reset" value="RESET" name="reset">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="text-align: center" style="color: red">
+							If already registred <a href="project_login_form.php">click here</a> to log_in.
 						</td>
 					</tr>
 				</table>
